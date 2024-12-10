@@ -1,0 +1,153 @@
+:root {
+    --color-fondo: #F4F1E1;
+    --color-texto: #4D4D4D;
+    --color-nav: #4F4F2F;
+    --color-boton: #8C9A4E;
+    --color-subtitulo: #8C9A4E;
+    --color-footer: #928879;
+    --color-card: #F2E8D9;
+    --color-titulo: #c4661f;
+}
+
+/* Estilos generales */
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Navegación */
+.navbar {
+    background-color: var(--color-nav);
+}
+
+.dropdown-toggle, .navbar-brand, .nav-link {
+    color: #F2E8D9;
+}
+
+/* Espaciado */
+.margen {
+    margin-top: 15px;
+}
+
+.carousel-caption {
+    color: #F2E8D9;
+}
+
+/* Estilos para imágenes y textos */
+.img-spa {
+    color: var(--color-nav);
+}
+
+.fondo-adicional {
+    background-color: var(--color-card);
+}
+
+/* Subtítulos */
+.subtitulo {
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--color-subtitulo);
+    font-family: "Bitter", cursive;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: var(--color-boton);
+    border: 1px solid var(--color-boton);
+}
+
+/* Formularios */
+textarea {
+    resize: none;
+}
+
+/* Fondos */
+.fondo, .fondo-carpa, .fondo-eventos, .fondo-promociones {
+    width: 100%;
+    height: 50vh;
+    min-height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column; /* Para apilar elementos verticalmente */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; 
+    color: var(--color-titulo);
+}
+
+.fondo-carpa {
+    background: url(/img/fondo-carpas.JPG);
+}
+
+.fondo-eventos {
+    background: url(/img/estrellas3.png); 
+}
+
+.fondo-promociones {
+    background: url(/img/vino.png);
+}
+
+/* Tarjetas */
+.card {
+    background-color: var(--color-card);
+    border: 1px solid var(--color-boton);
+}
+
+/* Títulos y subtítulos en el fondo */
+.titulo-fondo {
+    padding: 2px;
+    background-color: var(--color-fondo);
+    color: var(--color-titulo);
+    font-size: 40px;
+    font-family: "Alfa Slab One", cursive;
+    text-align: center;
+    margin: 0 auto; /* Cambiado a 0 para evitar espacio adicional */
+}
+
+.subtitulo-fondo {
+    padding: 2px;
+    background-color: var(--color-fondo);
+    color: var(--color-titulo);
+    font-size: 18px;
+    font-family: "Bitter", cursive;
+    margin: 5px auto; /* Ajustado para un poco de espacio */
+}
+
+/* Mapa */
+.mapa iframe {
+    width: 100%;
+    aspect-ratio: 1.2;
+}
+
+/* Formularios */
+.formulario {
+    background-color: var(--color-card);
+    margin: 10px 0 0 50px;
+    border-radius: 5px;
+    border: 1px solid #928879;
+    padding: 5px; /* Ajustado para un espaciado uniforme */
+}
+
+/* Aclaración de eventos */
+.aclaracion-evento {
+    margin-bottom: 15px;
+    text-align: center;
+    color: var(--color-nav);
+}
+
+.sub-evento {
+    margin: 5px 0;
+}
+
+/* Texto de la tarjeta */
+.card-text {
+    text-align: center;
+}
+
+/* Pie de página */
+.footer {
+    background-color: var(--color-footer);
+    color: #F2E8D9;
+    text-align: center;
+    margin-top: 30px;
+}

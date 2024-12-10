@@ -1,0 +1,109 @@
+<!-- Carrusel informativo -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/Img/gente.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="titulo-fondo">Carpas </h2>
+                    <h5 class="subtitulo-fondo">Cada amanecer sobre el lago Lolog es una experiencia inolvidable</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/Img/spa1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption img-spa d-none d-md-block">
+                    <h2 class="titulo-fondo">Spa</h2>
+                    <h5 class="subtitulo-fondo"> Relájate, rejuvenece y disfruta de una experiencia única
+                    </h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/Img/estrellas2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="titulo-fondo">Eventos</h2>
+                    <h5 class="subtitulo-fondo">Descubre la magia de cada evento en el corazón de la naturaleza</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Fin del carrusel -->
+
+    <!-- Quienes somos? -->
+    <div class="row align-items-center py-4 mt-4 fondo-adicional">
+        <div class="col-lg-2 col-md-3 offset-lg-2 d-none d-sm-block">
+            <img src="/Img/nosotros1.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-lg-2 col-md-3 d-none d-sm-block">
+            <img src="/Img/nosotros3.jpg" class="img-fluid">
+        </div>
+        <div class="col-12 d-sm-none">
+            <img src="/Img/nosotros2.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-lg-4 col-md-6 mt-4 mt-sm-0">
+            <h2 class="subtitulo">¿Quienes somos?</h2>
+            <p>Caleuche es mucho más que un simple alojamiento. Somos una invitación a vivir una experiencia
+                única
+                en contacto con la naturaleza. Ubicados a orillas del Lago Lolog, en la hermosa provincia de
+                Neuquén, te ofrecemos un espacio exclusivo para desconectar y disfrutar de la aventura. Explora los
+                senderos
+                cercanos, relájate junto al lago o
+                simplemente disfruta de la tranquilidad de nuestro entorno.</br> En Caleuche, la naturaleza es nuestra
+                mayor
+                inspiración.</p>
+        </div>
+    </div>
+
+    <!-- Ubicación -->
+    <div id="conocenos" class="row py-4">
+        <div class="col-md-4 offset-md-2">
+            <h2 class="subtitulo">Visitanos</h2>
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d381.9290629101004!2d-71.36151872918839!3d-40.0211221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96117269a438e4bf%3A0x556696d4160d50e!2sCamping%20Lolog!5e0!3m2!1ses!2sar!4v1727304095712!5m2!1ses!2sar"></iframe>
+            </div>
+        </div>
+
+        <!-- FORMULARIO RESERVA  -->
+        <div class="col-md-4 mt-4 mt-sm-0">
+            <h2 class="subtitulo">Contactanos</h2>
+            <form class="row g-3 formulario" action="/" method="post">
+                <div class="col-md-6">
+                    <label for="Nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="John">
+                </div>
+                <div class="col-md-6">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="name" class="form-control" id="apellido" name="apellido" placeholder="Doe">
+                </div>
+                <div class="col-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="apellido" name="email" placeholder="ejemplo@gmai.com" required>
+                </div>
+                <div class="col-12">
+                    <label for="consulta" class="form-label">Consulta</label>
+                    <textarea class="form-control" id="consulta" name="consulta" rows="3" placeholder="Deja tu consulta..."></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+            {{message}}
+        </div>
+    </div>
