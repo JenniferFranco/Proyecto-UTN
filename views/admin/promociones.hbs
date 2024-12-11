@@ -12,7 +12,7 @@
   {{! fila 2 }}
   <div class="row">
     <div class="col-7" style="margin: top 9px;">
-      <h2>Novedades</h2>
+      <h2>Promociones</h2>
     </div>
     <div class="col-5 text-rigth">
       <a href="" class="btn btn-success"> <i class="fas fa-plus"></i>Nuevo</a>
@@ -31,7 +31,7 @@
           </tr>
         </thead>
         <tbody>
-            {{#each novedades}}
+            {{#each promociones}}
           <tr>
             <th scope="row">{{id}}</th>
             <td>{{titulo}}</td>
@@ -41,7 +41,7 @@
                   class="fas fa-pencil-all"
                 ></i></a>
                 {{!-- eliminar --}}
-              <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-secondary">
+              <a href="/admin/promociones/eliminar/{{id}}" class="btn btn-secondary">
                 <i class="fas fa-trash"></i></a>
             </td>
           </tr>

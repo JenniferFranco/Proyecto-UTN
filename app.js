@@ -15,7 +15,7 @@ var loginRouter = require ('./routes/admin/login');
 var carpasRouter = require('./routes/carpas');
 var eventosRouter = require('./routes/eventos');
 var promocionesRouter = require('./routes/promociones');
-var adminRouter = require('./routes/admin/novedades');
+var adminRouter = require('./routes/admin/promociones');
 
 
 var app = express();
@@ -55,7 +55,7 @@ app.use('/carpas', carpasRouter);
 app.use('/eventos', eventosRouter);
 app.use('/promociones', promocionesRouter);
 app.use('/admin/login', loginRouter);
-app.use ('/admin/novedades',secured, adminRouter);
+app.use ('/admin/promociones',secured, adminRouter);
   
   // catch 404 and forward to error handler
   app.use(function(req, res, next) {
