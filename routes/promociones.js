@@ -1,8 +1,13 @@
 var express = require('express');
 var router = express.Router();
+var promocionesModel = require ('../models/promocionesModel');
 
-router.get('/', function(req, res, next) {
-  res.render('promociones', { title: 'Express' });
+router.get('/', async function(req, res, next) {
+
+  var promociones = await promocionesModel.getPromociones();
+  res.render('promociones', (
+    promociones
+  ));
 });
 
 module.exports = router;

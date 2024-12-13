@@ -1,15 +1,48 @@
- <!-- img de fondo para promociones -->
-    <div class="conteiner fondo-promociones">
-        <div class="info-fondo">
-            <h2 class="titulo-fondo">Promociones </h2>
-            <h3 class="subtitulo-fondo">Conoce todo lo que tenemos para ofrecerte</h3>
+<!-- img de fondo para promociones -->
+<div class="conteiner fondo-promociones">
+  <div class="info-fondo">
+    <h2 class="titulo-fondo">Promociones </h2>
+    <h3 class="subtitulo-fondo">Conoce todo lo que tenemos para ofrecerte</h3>
+  </div>
+</div>
+
+<!-- Promo 1 -->
+<div class="row align-items-center py-4 mt-4 fondo-adicional">
+  <div class="col-lg-3 col-md-3 offset-lg-2">
+    <ul>
+      {{#each promociones}}
+        <li>
+          <a
+            href="javascript:void(0)"
+            data-toggle="modal"
+            data-target="#Modal{{id}}"
+          > <img src="img/desayuno.png" /> {{titulo}}</a>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
+
+{{!-- Modal --}}
+{{#each promociones}}
+<div class="modal fade" id="Modal {{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">{{titulo}}</h5>
+                <button type="button" class="close" aria-disabled="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h6> {{descripcion}}</h6>
+                <p>{{precio}}</p>
+            </div>
         </div>
     </div>
-
-    <!-- Promo 1 -->
-    <div class="row align-items-center py-4 mt-4 fondo-adicional">
-        <div class="col-lg-3 col-md-3 offset-lg-2">
-            <img src="Img/pareja.png" alt="" class="img-fluid">
+</div>
+{{/each}}
+{{! <img src="Img/pareja.png" alt="" class="img-fluid">   
         </div>
         <div class="col-lg-5 col-md-6 mt-4 mt-sm-0">
             <h2 class="subtitulo"> Escapada Romantica</h2>
@@ -50,4 +83,4 @@
             <p> Si buscas una experiencia cargada de aventura, rodeado de la belleza virgen del Lago Lolog, este paquete
                 es para vos.</p>
         </div>
-    </div>
+    </div> }}
