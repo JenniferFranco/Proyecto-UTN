@@ -1,22 +1,22 @@
     <div class="login-container">
-        <h2>Iniciar sesión</h2>
+        <h2 class="titulo-form-control">Iniciar sesión</h2>
         <form action="/admin/login" method="post">
             <!-- Campo de usuario -->
              <div class="mb-3">
                 <label for="usuario" class="form-label">Usuario</label>
-                <input type="text" class="form-control" id="user" name="usuario">  
+                <input type="text" class="form-control form-login" id="user" name="usuario">  
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="password" name="password">  
+                <input type="password" class="form-control form-login" id="password" name="password">  
             </div>
             <!-- Botón -->
-            <div class="form-group">
-                <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+            <div class="form-group btn-login">
+                <button type="submit" class="btn btn-primary btn-form">Iniciar sesión</button>
             </div>
         </form>
         {{#if error}}
-        <p>Usuario o contraseña incorrecto</p>
+        <p class="text-alert ">Usuario o contraseña incorrecto</p>
         {{/if}}
     </div>
 

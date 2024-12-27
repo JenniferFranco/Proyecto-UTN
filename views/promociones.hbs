@@ -14,8 +14,8 @@
         <li>
           <a
             href="javascript:void(0)"
-            data-toggle="modal"
-            data-target="#Modal{{id}}"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
           > <img src="{{imagen}}" /> {{titulo}}</a>
         </li>
       {{/each}}
@@ -23,64 +23,32 @@
   </div>
 </div>
 
-{{!-- Modal --}}
 {{#each promociones}}
-<div class="modal fade" id="Modal {{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true" >
     <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">{{titulo}}</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <h6> {{descripcion}}</h6>
-                <p>{{precio}}</p>
-            </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">{{titulo}}</h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true"> &times;</span>
+          </button>
         </div>
+        <div class="modal-body">
+          <h6> {{descripcion}}</h6>
+          <p>{{precio}}</p>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 {{/each}}
-{{! <img src="Img/pareja.png" alt="" class="img-fluid">   
-        </div>
-        <div class="col-lg-5 col-md-6 mt-4 mt-sm-0">
-            <h2 class="subtitulo"> Escapada Romantica</h2>
-            <p>Sumérgete en una experiencia única con nuestra Escapada Romántica, diseñada para parejas que desean
-                desconectar y reconectar en un entorno natural incomparable. A orillas del Lago Lolog, disfrutarás de la
-                tranquilidad del paisaje patagónico, rodeado de montañas y el sonido del agua. Esta promoción incluye
-            </p>
-            <ul>
-                <li> Alojamiento en una carpa exclusiva con vistas privilegiadas al lago.</li>
-                <li> Cena gourmet bajo las estrellas, con productos frescos de la región.</li>
-                <li> Desayuno al amanecer servido en tu carpa.</li>
-                <li>Paseo privado en velero o bote por el lago.</li>
-            </ul>
-            <p> Vive una experiencia íntima, donde la naturaleza será el marco perfecto para momentos inolvidables junto
-                a esa persona especial.
-            </p>
-
-        </div>
-    </div>
-
-    <!-- Promo 2 -->
-    <div class="row align-items-center py-4 mt-4 fondo-adicional">
-        <div class="col-lg-3 col-md-3 offset-lg-2">
-            <img src="Img/aventura.png" alt="" class="img-fluid">
-        </div>
-        <div class="col-lg-5 col-md-6 mt-4 mt-sm-0">
-            <h2 class="subtitulo">Aventura Extrema</h2>
-            <p> Para los amantes de la adrenalina y la naturaleza, nuestro Paquete Aventura es la opción ideal. Disfruta
-                de tres días llenos de actividades al aire libre, explorando los paisajes impresionantes de Neuquén.
-                Este paquete incluye:</p>
-            <ul>
-                <li>Alojamiento en carpas confortables, perfectamente integradas en el entorno natural.</li>
-                <li>Actividades guiadas: trekking en las montañas cercanas, recorridos en velero por el lago y
-                    senderismo por bosques nativos.</li>
-                <li> Un día completo de rafting en los rápidos del río Aluminé (traslados incluidos).</li>
-                <li> Noches de fogata bajo el cielo estrellado, con música y comida regional.</li>
-            </ul>
-            <p> Si buscas una experiencia cargada de aventura, rodeado de la belleza virgen del Lago Lolog, este paquete
-                es para vos.</p>
-        </div>
-    </div> }}

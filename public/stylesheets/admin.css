@@ -1,0 +1,134 @@
+:root {
+    --color-fondo: #F4F1E1;
+    --color-texto: #4D4D4D;
+    --color-nav: #4F4F2F;
+    --color-boton: #8C9A4E;
+    --color-subtitulo: #8C9A4E;
+    --color-footer: #928879;
+    --color-card: #F2E8D9;
+    --color-titulo: #c4661f;
+    --color-form: #fff
+}
+
+/* Navegación */
+.navbar {
+    background-color: var(--color-nav);
+}
+
+.dropdown-toggle, .navbar-brand, .nav-link {
+    color: #F2E8D9;
+}
+
+/* Fondo */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    background-color: var(--color-fondo);
+}
+
+/* Estilo de form login */
+.login-container {
+    background-color: var(--color-form);
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    margin: 50px auto; 
+    flex: 1; 
+}
+
+.titulo-form-control {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-label {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+.form-login {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Mensaje de error */
+.text-alert {
+    color: red;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.btn-login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-form{
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo tabla promociones */
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.col-5 {
+    display: flex;
+    justify-content: flex-end; /* Alinea el botón a la derecha */
+    align-items: center; /* Alinea verticalmente el botón */
+}
+
+
+th.text-right {
+    text-align: center; /* Centra el texto en el encabezado de "Acciones" */
+    vertical-align: middle; /* Alineación vertical del texto del encabezado */
+}
+
+
+/* Estilo form modificar */
+.container-modificar{
+    background-color: var(--color-form);
+    padding: 20px 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto; 
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+/* Pie de página */
+.footer {
+    background-color: var(--color-footer);
+    color: #F2E8D9;
+    text-align: center;
+    margin-top: auto;
+}

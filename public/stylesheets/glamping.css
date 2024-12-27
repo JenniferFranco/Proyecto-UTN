@@ -77,14 +77,18 @@ textarea {
 
 .fondo-carpa {
     background: url(/img/fondo-carpas.JPG);
+    
 }
 
+
 .fondo-eventos {
-    background: url(/img/estrellas3.png); 
+    background: url(/img/fondo-actividades.jpg);
+    background-position: bottom;
 }
 
 .fondo-promociones {
     background: url(/img/vino.png);
+    background-size: cover;
 }
 
 /* Tarjetas */
